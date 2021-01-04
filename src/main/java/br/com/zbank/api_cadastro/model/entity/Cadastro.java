@@ -2,7 +2,7 @@ package br.com.zbank.api_cadastro.model.entity;
 
 import org.hibernate.validator.constraints.br.CPF;
 import org.springframework.lang.NonNull;
-import javax.persistence.*; //Entity, Table, Id, GeneratedValue, GenerationType
+import javax.persistence.*; //Entity, Id, GeneratedValue, GenerationType
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Past;
@@ -11,7 +11,6 @@ import java.util.Date;
 import java.util.regex.Pattern;
 
 @Entity
-@Table(name = "cadastro")
 public class Cadastro {
 
     @Id
