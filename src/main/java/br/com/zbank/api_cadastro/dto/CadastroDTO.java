@@ -1,11 +1,17 @@
 package br.com.zbank.api_cadastro.dto;
 
 public class CadastroDTO {
+    private String nome;
     private String email;
     private String cpf;
-    private String nome;
     private String nascimento;
 
+    public String getNome() {
+        return nome;
+    }
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
     public String getEmail() {
         return email;
     }
@@ -17,12 +23,6 @@ public class CadastroDTO {
     }
     public void setCpf(String cpf) {
         this.cpf = cpf;
-    }
-    public String getNome() {
-        return nome;
-    }
-    public void setNome(String nome) {
-        this.nome = nome;
     }
     public String getNascimento() {
         return nascimento;
